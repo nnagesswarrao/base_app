@@ -1,0 +1,46 @@
+
+ .side-navbar{
+     background-color: #333;
+     text-align: center;
+
+
+}
+.logos{
+color:white ;
+margin: auto;
+text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    // background-color: #333;
+    // position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  li a:hover {
+    background-color: rgb(207, 82, 82);
+  }
+
+
+// li{
+//     display: block;
+//   text-align: center;
+
+// }
