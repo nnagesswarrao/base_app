@@ -1,0 +1,13 @@
+<p>gellary works!</p>
+
+<div class="container">
+    <div class="row"> Photos</div>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let d of Images">
+            <img [src]="d.paths" />
+            <span>{{d.name}}</span>
+        </div>
+    </div>
+
+
+</div>

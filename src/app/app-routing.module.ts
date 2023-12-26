@@ -11,9 +11,19 @@ import { LayoutComponentComponent } from './layout-component/layout-component.co
 
 const appRoutes: Routes = [
     // { path: 'internal/auth', component: FullLayoutComponent, loadChildren: () => import('./apps/auth/auth.module').then(m => m.AuthModule) },
-     { path: 'internal/home', component: LayoutComponentComponent, loadChildren: () => import('./apps/home-page/home-page.module').then(m => m.HomePageModule) },
+     { path: 'internal/home', component: LayoutComponentComponent,
+      loadChildren: () => import('./apps/home-page/home-page.module').then(m => m.HomePageModule) },
 
+     { path: 'internal/about', component: LayoutComponentComponent,
+      loadChildren: () => import('./apps/about-us/about-us.module').then(m => m.AboutUsModule) },
 
+      { path: 'internal/contact', component: LayoutComponentComponent,
+      loadChildren: () => import('./apps/contact-us/contact-us.module').then(m => m.ContactUsModule) },
+
+      { path: 'internal/gellary', component: LayoutComponentComponent,
+      loadChildren: () => import('./apps/gellary/gellary.module').then(m => m.GellaryModule) },
+
+      
     { path: '**', redirectTo: 'internal/home' },
 ];
 //VendorDetailsRoutingModule

@@ -1,8 +1,25 @@
 <!-- <p>home-page works!</p> -->
-  <div>
-    <div>
 
-        <app-homecarousel></app-homecarousel>
 
-    </div>
-  </div>
+
+<app-homecarousel></app-homecarousel>
+
+
+<div class="container">
+
+        <div class="row home-words">
+                <span>Words</span>
+        </div>
+
+        <div class="row">
+
+                <div class="col-md-3" *ngFor="let word of wordsData">
+                        <p>{{word.passage}}</p>
+                </div>
+
+        </div>
+        <app-prayerrequest></app-prayerrequest>
+<app-bible-page></app-bible-page>
+        <!-- <app-contact-us></app-contact-us> -->
+
+</div>
