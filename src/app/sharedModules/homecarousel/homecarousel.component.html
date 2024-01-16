@@ -1,5 +1,6 @@
 <nz-carousel nzAutoPlay>
-    <div nz-carousel-content *ngFor="let index of array">
-        <h3>{{ index }}</h3>
+    <div nz-carousel-content *ngFor="let c of array; let i=index">
+        <!-- <h3>{{ i+1 }}</h3> -->
+        <img [src]="c.name" />
     </div>
 </nz-carousel>

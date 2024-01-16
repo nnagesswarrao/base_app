@@ -9,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomecarouselComponent {
 
-  array=[1,2,3,4];
+  array: any = []
+
+  constructor() {
+
+    this.getImage();
+    this.array = new Array(5).fill({ name: 'assets/images/hd1080.png' })
+
+  }
+
+  getImage(): void {
+
+
+  }
 
 }
