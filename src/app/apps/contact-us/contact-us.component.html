@@ -1,13 +1,52 @@
 <div class="container">
-
+    <div class="row contact"> Communication</div>
     <div class="row">
+
+
         <div class="col-md-6">
-            <address>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt praesentium hic ab quam
-                aspernatur perferendis quisquam molestiae earum architecto placeat atque explicabo consequatur
-                reprehenderit magnam pariatur, unde dolor sint saepe? Totam eius quam doloremque.
-            </address>
+            <div style="box-shadow: 0 4px 16px 0 rgba(0,0,0.2,0.4);
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px;
+            text-align: center;">
+                <div>
+                    <span>Address</span>
+                </div>
+                <address style="margin: 15px;">
+                    <span>{{addressData.village}}</span> , <br />
+                    <span>{{addressData.mandal}}</span>, <br />
+                    <span>{{addressData.district}}</span>, <br />
+                    <span>{{addressData.pincode}}</span>
+
+                </address>
+
+            </div>
+            <div style="box-shadow: 0 4px 16px 0 rgba(0,0,0.2,0.4);
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px;
+            text-align: center;">
+                <div>
+                    <span>Contact</span>
+                </div>
+                <address style="margin: 15px;">
+                    <span>{{addressData.Email}}</span> , <br />
+                    <span>{{addressData.Phone}}</span>, <br />
+                    <span>facebook.com/jesus</span>, <br />
+                    <span>twiiter.com/jesus</span>
+
+                </address>
+
+            </div>
+
+
+
+            <div>
+
+            </div>
         </div>
+
+
         <div class="col-md-6">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15234.081145551234!2d82.3609162!3d17.3386798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39da9c70000001%3A0xa4cf6ff61c0d2df9!2sCalvary%20Church%20Jesus%20%2CSrungavaram!5e0!3m2!1sen!2sin!4v1703485564006!5m2!1sen!2sin"
@@ -18,29 +57,36 @@
 
     </div>
 
-    <div>
+    <div class="row conta-form">
         <h3>Contact Form</h3>
+    </div>
 
-        <!-- <div class="container"> -->
-        <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="row">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <div class="col-md-10">
+            <!-- <div class="container"> -->
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
 
-            <input type="submit" value="Submit">
-        </form>
-        <!-- </div> -->
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <div style="text-align: center;">
+                    <input type="submit" value="Submit" style="width: 80%;">
+                </div>
+            </form>
+        </div>
     </div>
 </div>

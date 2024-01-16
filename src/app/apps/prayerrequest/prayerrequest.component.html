@@ -2,53 +2,101 @@
 
     <!-- <p>prayerrequest works!</p>
      -->
-    <div class="row">
-        Request
+    <div class="row request-header">
+        <h4>
+            Request
+        </h4>
     </div>
 
     <div class="row">
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam, nisi a eos voluptatibus quibusdam
                 earum quam. Eius, deleniti odio placeat rerum illum neque temporibus aut, nulla odit ullam facere
                 corrupti. Facere qui facilis neque ipsum numquam voluptates quisquam debitis maiores quo blanditiis?
                 Nisi vitae, optio sit voluptates sequi quia?</p>
+        </div> -->
+        <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit autem mollitia. Dolores optio
+                temporibus voluptates esse et cupiditate odio voluptas amet facilis rem minus, inventore itaque ex id
+                debitis quia fuga officia, accusamus ea repellat, quas repudiandae? Ipsam, ab!</p>
         </div>
-        <div class="col-md-6">
-            <form>
-                <div class="row">
-                    <div class="col-md-6"> Name</div>
-                    <div class="col-md-6">
-                        <input type="text" placeholder="please enter Name" nz-input />
+        <div class="col-md-8">
+            <form [formGroup]="requetgform">
+
+                <table class="request-table">
+                    <tr>
+                        <td style="width: 20% !important;">Name</td>
+                        <td style="width: 80% !important;"> <input type="text" placeholder="please enter Name" nz-input
+                                class="request-input" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>City/Village</td>
+                        <td> <input type="text" placeholder="please enter City/ Village" nz-input
+                                class="request-input" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td> <input type="text" placeholder="please enter Email" nz-input class="request-input" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td> <input type="text" placeholder="please enter Phone" nz-input class="request-input" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Remarks</td>
+                        <td><textarea nz-input class="request-input"></textarea></td>
+
+                    </tr>
+                </table>
+                <div class="btn-card">
+                    <button nz-button nzType="primary" class="sbmt-btn">Submit</button>
+                </div>
+                <!-- 
+                <div class="row margin-tp10">
+
+
+                    <div class="col-md-3 text-end"> Name</div>
+                    <div class="col-md-9">
+                        <input type="text" placeholder="please enter Name" nz-input class="request-input" />
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6"> City/Village</div>
-                    <div class="col-md-6">
-                        <input type="text" placeholder="please enter City/ Village" nz-input />
+                <div class="row margin-tp10">
+                    <div class="col-md-3 text-end"> City/Village</div>
+                    <div class="col-md-9">
+                        <input type="text" placeholder="please enter City/ Village" nz-input class="request-input" />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6"> Email</div>
-                    <div class="col-md-6">
-                        <input type="text" placeholder="please enter Email" nz-input />
+                <div class="row margin-tp10">
+                    <div class="col-md-3 text-end"> Email</div>
+                    <div class="col-md-9">
+                        <input type="text" placeholder="please enter Email" nz-input class="request-input" />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6"> Phone</div>
-                    <div class="col-md-6">
-                        <input type="text" placeholder="please enter Phone" nz-input />
+                <div class="row margin-tp10">
+                    <div class="col-md-3 text-end"> Phone</div>
+                    <div class="col-md-9">
+                        <input type="text" placeholder="please enter Phone" nz-input class="request-input" />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">Remarks</div>
+                <div class="row margin-tp10">
+                    <div class="col-md-3 text-end">Remarks</div>
 
-                    <div class="col-md-6">
-                        <textarea nz-input></textarea>
+                    <div class="col-md-9">
+                        <textarea nz-input class="request-input"></textarea>
                     </div>
-                </div>
-                <button nz-button nzType="primary">Submit</button>
+                </div> -->
+                <!-- <div class="row">
+                    <div>
+                        <button nz-button nzType="primary" class=" width: 20%;">Submit</button>
+                    </div>
+                </div> -->
             </form>
         </div>
+        <!-- <div class="col-md-2"></div> -->
     </div>
 </div>

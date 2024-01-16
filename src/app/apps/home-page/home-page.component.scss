@@ -1,3 +1,23 @@
 .home-words{
+    // text-align: center;
+    padding: 0;
+    margin: 20px 0px 20px 0px;
+    background: beige;
+    font-size: 25px;
     text-align: center;
+
 }
+
+.words-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0.5,0.5);
+    /* padding: 1px; */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 170px;
+}
+
+::ng-deep .slick-slide {
+    width: 25% !important; /* Adjust the width based on the number of items you want to show per page */
+  }

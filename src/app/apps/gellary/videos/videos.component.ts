@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-videos',
@@ -7,9 +8,11 @@ import { Component } from '@angular/core';
 })
 export class VideosComponent {
   Videos: any = [];
-  constructor() {
+  constructor(private sanitizer: DomSanitizer) {
 
-    var Ararays = new Array(20).fill({ name: 'I lov Jesus', paths: 'https://www.youtube.com/embed/aiDwzsLCBcA?si=nw1PANNVtH25L-Y-' });
+    var safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl( 'https://www.youtube.com/embed/aiDwzsLCBcA?si=nw1PANNVtH25L-Y-');
+
+    var Ararays = new Array(20).fill({ name: 'I lov Jesus', paths: safeUrl});
     this.Videos = Ararays
   }
 

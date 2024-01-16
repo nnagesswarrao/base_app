@@ -5,12 +5,14 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 
 
 
+
+
 @NgModule({
   declarations: [HomecarouselComponent],
   exports: [HomecarouselComponent],
   imports: [
     CommonModule,
-    NzCarouselModule 
+    NzCarouselModule ,
   ]
 })
 export class SharedModule { }

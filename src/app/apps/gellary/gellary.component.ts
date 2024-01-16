@@ -10,7 +10,7 @@ export class GellaryComponent {
   Images: any = [];
 
   constructor() {
-    var array = new Array(20).fill({ name: "i love india", paths: 'assets/hd1080.png' });
+    var array = new Array(20).fill({ name: "Place Name-(uploaded Date)", paths: 'assets/hd1080.png' });
     this.Images = array;
     console.log(array)
   }

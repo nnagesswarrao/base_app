@@ -4,12 +4,13 @@
     </div>
 
     <div class="row">
-        <div class=" col-md-3" *ngFor="let v of Videos">
-            <iframe width="560" height="315" [src]="v.paths"
-                title="YouTube video player" frameborder="0"
+        <div class="row vidoes-header"> Videos</div>
+        <div class=" col-md-4" *ngFor="let v of Videos">
+            <iframe width="100%" [src]="v.paths" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
+
     </div>
 
 </div>

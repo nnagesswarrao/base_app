@@ -1,1 +1,47 @@
-<p>bible-page works!</p>
+<div class="container">
+
+    <div class="row bible">
+        <h3>Bible</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <nz-select>
+                <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+            </nz-select>
+        </div>
+        <div class="col-md-4">
+            <nz-select>
+                <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+            </nz-select>
+        </div>
+        <div class="col-md-4">
+            <nz-select>
+                <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+            </nz-select>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <span>Lorem, ipsum.</span>
+        </div>
+        <div class="col-md-1">
+            <span>Lorem.</span>
+        </div>
+        <div class="col-md-10">
+            <div class="row" *ngFor="let v of Version;let i=index">
+                <!-- <div class="col-md-2">{{i+1}}</div> -->
+                <div class="col-md-12">
+                    <span>{{i+1}} .</span> {{v.version}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

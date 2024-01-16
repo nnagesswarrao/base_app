@@ -14,7 +14,8 @@ export class HearderComponent {
     { path: '/internal/gellary/photos', Name: 'Photos' },
     { path: '/internal/gellary/videos', Name: 'videos' },
     { path: '/internal/contact', Name: 'Contact Us' },
-    { path: '/internal/about', Name: 'About Us' }
+    { path: '/internal/about', Name: 'About Us' },
+    { path: '/internal/bible', Name: 'Bible' }
 
   ]
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-prayerrequest',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './prayerrequest.component.scss'
 })
 export class PrayerrequestComponent {
+
+  requetgform!: FormGroup;
 
 }

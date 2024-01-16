@@ -24,11 +24,11 @@ export class HomePageComponent {
     dicta voluptatibus cumque perspiciatis eligendi consequuntur est enim, hic saepe ipsa
     molestias minus voluptate neque repudiandae exercitationem!` , id: 3
     },
-    {
-      passage: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed fugit facilis eius
-    dicta voluptatibus cumque perspiciatis eligendi consequuntur est enim, hic saepe ipsa
-    molestias minus voluptate neque repudiandae exercitationem!` , id: 4
-    }
+    // {
+    //   passage: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed fugit facilis eius
+    // dicta voluptatibus cumque perspiciatis eligendi consequuntur est enim, hic saepe ipsa
+    // molestias minus voluptate neque repudiandae exercitationem!` , id: 4
+    // }
   ]
 
 }

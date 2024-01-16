@@ -20,6 +20,11 @@ export class BiblePageComponent {
     "కొలొస్సయులకు", "1 థెస్సలొనీకయులకు", "2 థెస్సలొనీకయులకు", "1 తిమోతికి", "2 తిమోతికి", "తీతుకు", "ఫిలేమోనుకు",
     "హెబ్రీయులకు", "యాకోబు", "1 పేతురు", "2 పేతురు", "1 యోహాను", "2 యోహాను", "3 యోహాను", "యూదా", "ప్రకటన గ్రంథము"];
 
+  Version = new Array(50).fill({
+    version: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor error eius iste voluptatibus qui,
+atque itaque ipsam incidunt.`})
+
+
   constructor() {
     console.log(bible, this.Books);
     // this.readJsonFile();

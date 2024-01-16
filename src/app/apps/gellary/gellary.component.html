@@ -1,11 +1,14 @@
-<p>gellary works!</p>
+<!-- <p>gellary works!</p> -->
 
 <div class="container">
-    <div class="row"> Photos</div>
+    <div class="row gelary"> Photos</div>
     <div class="row">
-        <div class="col-md-3" *ngFor="let d of Images">
-            <img [src]="d.paths" />
-            <span>{{d.name}}</span>
+        <div class="col-md-4" *ngFor="let d of Images">
+            <div style="border: 1px solid aqua;
+            margin-bottom: 10px;">
+                <img [src]="d.paths" style="width: 100%;" />
+                <span>{{d.name}}</span>
+            </div>
         </div>
     </div>
 
